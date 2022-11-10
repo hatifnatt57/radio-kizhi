@@ -46,7 +46,7 @@ window.addEventListener('load', () => {
 /**
  * Отрисовка компонентов.
  */
-fetch('http://localhost:3000/api/api.json')
+fetch('https://radio.intmedia.ru/api/api.json')
   .then(res => res.json())
   .then(apiData => {
     window.$globalStorage.apiData = apiData;
