@@ -1,0 +1,190 @@
+:host {
+  width: 100%;
+  --progress: 0%;
+}
+
+.progress {
+  width: 80%;
+  margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  position: relative;
+}
+
+.progress--bar {
+  width: 100%;
+	height: 0.9vh;
+	border-radius: 0.45vh;
+	background-color: var(--progress-bar);
+	margin-bottom: 1.5vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.progress--bar-completed {
+  width: 100%;
+	height: 100%;
+	background-color: var(--done);
+	position: absolute;
+	top: 0;
+	left: calc(var(--progress) - 100%);
+  transition: background-color 0.3s;
+}
+
+:host([state="ready"]) .progress--bar-completed {
+  background-color: transparent;
+}
+
+.progress--handle {
+  width: 1.8vh;
+  height: 1.8vh;
+	background-color: var(--text);
+	border-radius: 50%;
+	position: absolute;
+	left: var(--progress);
+	top: 0.45vh;
+	transform: translate(-50%, -50%);
+	transition: background-color 0.3s;
+	border: 1.5vh solid transparent;
+  box-sizing: content-box;
+  background-clip: content-box;
+}
+
+:host([state="ready"]) .progress--handle {
+  background-color: var(--inactive);
+}
+
+.progress--time-start, .progress--time-end {
+  font-family: 'Inter';
+  font-weight: bold;
+	color: var(--text);
+	font-size: 4rem;
+	letter-spacing: 0.5px;
+}
+
+.control-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 7vh;
+}
+
+.control-buttons-container button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.control-buttons-container .play,
+.control-buttons-container .pause,
+.control-buttons-container .play-again {
+  display: none;
+  width: 14vh;
+  height: 14vh;
+  border: 0.8vh var(--text) solid;
+	border-radius: 50%;
+	background-color: var(--shadow);
+}
+
+.play svg {
+  height: 6vh;
+}
+
+.pause svg {
+  height: 5vh;
+}
+
+.play-again svg {
+  height: 8vh;
+}
+
+:host([state="ready"]) .play,
+:host([state="paused"]) .play,
+:host([state="playing"]) .pause,
+:host([state="ended"]) .play-again {
+  display: flex;
+}
+
+.rewind, .fast-forward {
+  transition: opacity .3s;
+}
+
+.rewind svg, .fast-forward svg {
+  height: 7.5vh;
+}
+
+:host([state="ready"]) .rewind,
+:host([state="ready"]) .fast-forward,
+:host([state="ended"]) .fast-forward {
+  opacity: .5;
+}
+
+.drawer {
+  width: 100%;
+  height: var(--drawer-height);
+  position: absolute;
+  top: calc(0px - var(--drawer-height));
+  background-color: var(--downloader-background);
+  display: flex;
+  overflow: hidden;
+}
+
+.drawer--progress {
+  width: var(--drawer-height);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.drawer--progress>svg {
+  transform: rotateZ(-90deg);
+  height: 77%;
+}
+
+.drawer--progress button {
+  width: var(--drawer-height);
+  height: 100%;
+  display: none;
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+:host([state="paused"]) .drawer--play,
+:host([state="playing"]) .drawer--pause,
+:host([state="ended"]) .drawer--play-again {
+  display: flex;
+}
+
+.drawer--play svg, .drawer--pause svg, .drawer--play-again svg {
+  height: 37%;
+}
+
+.drawer h3 {
+  font-family: 'PTSerif';
+  font-weight: bold;
+  color: var(--text);
+  height: 100%;
+  margin: 0;
+  flex-grow: 1;
+  font-size: 4.5rem;
+  line-height: 6rem;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

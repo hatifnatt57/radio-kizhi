@@ -1,0 +1,62 @@
+[
+  {
+    "id": "korennoe-naselenie",
+    "title": "Коренное население острова&nbsp;Кижи",
+    "image": "http://localhost:3000/api/images/kor.jpg",
+    "audio": "http://localhost:3000/api/tracks/kor.mp3",
+    "duration": 1845,
+    "icons": [
+      { "src": "http://localhost:3000/api/icons/kor_192.png", "sizes": "192x192", "type": "image/png" },
+      { "src": "http://localhost:3000/api/icons/kor_384.png", "sizes": "384x384", "type": "image/png" },
+      { "src": "http://localhost:3000/api/icons/kor_512.png", "sizes": "512x512", "type": "image/png" }
+    ]
+  },
+  {
+    "id": "kak-ludi-dobiralys",
+    "title": "Как люди добирались до&nbsp;Кижей",
+    "image": "http://localhost:3000/api/images/lodka.jpg",
+    "audio": "http://localhost:3000/api/tracks/lodka.mp3",
+    "duration": 921,
+    "icons": [
+      { "src": "http://localhost:3000/api/icons/lodka_192.png", "sizes": "192x192", "type": "image/png" },
+      { "src": "http://localhost:3000/api/icons/lodka_384.png", "sizes": "384x384", "type": "image/png" },
+      { "src": "http://localhost:3000/api/icons/lodka_512.png", "sizes": "512x512", "type": "image/png" }
+    ]
+  },
+  {
+    "id": "flora-i-fauna",
+    "title": "Флора и фауна Кижских&nbsp;шхер",
+    "image": "http://localhost:3000/api/images/fauna.jpg",
+    "audio": "http://localhost:3000/api/tracks/fauna.mp3",
+    "duration": 921,
+    "icons": [
+      { "src": "http://localhost:3000/api/icons/fauna_192.png", "sizes": "192x192", "type": "image/png" },
+      { "src": "http://localhost:3000/api/icons/fauna_384.png", "sizes": "384x384", "type": "image/png" },
+      { "src": "http://localhost:3000/api/icons/fauna_512.png", "sizes": "512x512", "type": "image/png" }
+    ]
+  },
+  {
+    "id": "predaniya-ostrova",
+    "title": "Предания острова&nbsp;Кижи",
+    "image": "http://localhost:3000/api/images/pred.jpeg",
+    "audio": "http://localhost:3000/api/tracks/pred.mp3",
+    "duration": 921,
+    "icons": [
+      { "src": "http://localhost:3000/api/icons/pred_192.png", "sizes": "192x192", "type": "image/png" },
+      { "src": "http://localhost:3000/api/icons/pred_384.png", "sizes": "384x384", "type": "image/png" },
+      { "src": "http://localhost:3000/api/icons/pred_512.png", "sizes": "512x512", "type": "image/png" }
+    ]
+  },
+  {
+    "id": "derevyannoe-zodchestvo",
+    "title": "Деревянное зодчество Русского&nbsp;Севера",
+    "image": "http://localhost:3000/api/images/cerkov.jpg",
+    "audio": "http://localhost:3000/api/tracks/cerkov.mp3",
+    "duration": 921,
+    "icons": [
+      { "src": "http://localhost:3000/api/icons/cerkov_192.png", "sizes": "192x192", "type": "image/png" },
+      { "src": "http://localhost:3000/api/icons/cerkov_384.png", "sizes": "384x384", "type": "image/png" },
+      { "src": "http://localhost:3000/api/icons/cerkov_512.png", "sizes": "512x512", "type": "image/png" }
+    ]
+  }
+]

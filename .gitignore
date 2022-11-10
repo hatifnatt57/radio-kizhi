@@ -1,0 +1,12 @@
+node_modules
+
+# Серверные файлы
+public/cgi-bin
+public/.htaccess
+
+# Дист
+public/dist
+public/serviceworker.js
+
+# Другое
+.DS_Store
