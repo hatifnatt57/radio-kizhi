@@ -1,3 +1,21 @@
+# Radio Kizhi
+
+Audioplayer app for those who are traveling to a certain location of historical/cultural significance and want to listen to the lectures/podcasts about the place on the road.
+
+## Features
+
+- This is installable **PWA**.
+- Fast loading due to **Stale While Revalidate** cacheing strategy.
+- Audiofiles are **downloadable** for offline playback.
+- **Download Manager** provides support for download queue, pausing/resuming downloads, progress bar. That is achieved with use of **data streams** and **IndexedDB**.
+- **Offline mode**, to which the app switches automatically when needed. Page elements that are associated with lectures which were not downloaded turn B&W.
+- **Preserving app state** in localStorage. The last active lecture and all the timecodes are preserved between launches.
+- Swipe gesture support.
+- Playback controls in push-notification and lock screen with **MediaSession**.
+
+
+
+
 # Радио Кижи
 
 Приложение-плеер для тех, кто едет куда-то *далеко* и хочет послушать про это *далеко* лекции по дороге.
