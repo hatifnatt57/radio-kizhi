@@ -12,6 +12,16 @@ Audioplayer app for those who are traveling to a certain location of historical/
 - **Preserving app state** in localStorage. The last active lecture and all the timecodes are preserved between launches.
 - Swipe gesture support.
 - Playback controls in push-notification and lock screen with **MediaSession**.
+- Uses **Web Components**.
+
+## Hosted on
+
+https://radio.intmedia.ru/
+
+## Inspiration
+
+[Kino by Google](https://kinoweb.dev/)
+
 
 
 
@@ -34,11 +44,16 @@ Audioplayer app for those who are traveling to a certain location of historical/
   запись отображается в мини-плеере внизу экрана. Эти данные сохраняются в **localStorage**.
 - Поддержка свайп-жестов для манипуляции элементами на экране.
 - Управление прослушиванием в **push-уведомлении** и на **lock screen** - с помощью **mediaSession**.
+- Использует **Web Components**.
 
 ## Команды
 
 - npm run build - собрать проект со сжатием
 - npm run dev - собрать проект без сжатия и следить за изменениями
+
+## Хостится на
+
+https://radio.intmedia.ru/
 
 ## Вдохновение
 [Kino от Google](https://kinoweb.dev/)
